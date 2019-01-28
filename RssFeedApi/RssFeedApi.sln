@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rss.Feed.Api", "RssFeedApi\Rss.Feed.Api.csproj", "{0AA0157D-2258-4FDE-BC6A-13BA184C9EC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rss.Feed.Api.Test", "Rss.Feed.Api.Test\Rss.Feed.Api.Test.csproj", "{FD6AC5DC-0C89-40F4-9AC2-4CCC0AF02AD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AA0157D-2258-4FDE-BC6A-13BA184C9EC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA0157D-2258-4FDE-BC6A-13BA184C9EC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA0157D-2258-4FDE-BC6A-13BA184C9EC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA0157D-2258-4FDE-BC6A-13BA184C9EC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6AC5DC-0C89-40F4-9AC2-4CCC0AF02AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6AC5DC-0C89-40F4-9AC2-4CCC0AF02AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6AC5DC-0C89-40F4-9AC2-4CCC0AF02AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6AC5DC-0C89-40F4-9AC2-4CCC0AF02AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {263132BE-517C-4353-9507-1E313C93CAB1}
+	EndGlobalSection
+EndGlobal

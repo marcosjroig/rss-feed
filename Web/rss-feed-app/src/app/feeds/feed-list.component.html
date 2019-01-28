@@ -1,0 +1,41 @@
+<br>
+
+<div class="row">
+  <div class="col-md-7">
+      
+      <h4>Rss Feed List</h4>
+
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Publish date</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let feed of feeds; let id = index">
+            <td>
+               <a style="cursor: pointer;" href="#"  [routerLink]="[id]">
+                  Show Detail
+               </a>
+            </td>
+            <td>{{ feed.title | slice:0:30}} {{ ' ...' }}</td>
+            <td>{{ feed.content | slice:0:55}} {{ ' ...' }}</td>
+            <td>{{ feed.publishDate | date:short }}</td>
+            <td>
+               <a style="cursor: pointer;" target="_blank" rel="noopener noreferrer"  href="{{ feed.link }}">
+                Open Article
+               </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+  </div>
+  <div class="col-md-5">
+      <router-outlet></router-outlet>
+  </div>
+</div>
