@@ -30,15 +30,16 @@ namespace Rss.Feed.Api
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IConfiguration config)
         {
+            var url = config["WebSolution:Url"];
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
             app.UseCors(
-                options => options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader()
+                options => options.WithOrigins(url).AllowAnyMethod().AllowAnyHeader()
             );
             
             app.UseMvc();
