@@ -24,7 +24,7 @@ After downloading this repo and unzip it, please follow the next instructions to
 3) Ensure the file __launchSettings.json__ is pointing to this URL http://localhost:10140 as the Web project is looking at this URL to access the Web API
 4) There is a file __FakeXmlFeed.xml__ in the root of the __RssFeedApi__ folder with a few news that is used for testing in the testing project. Be sure to keep this file in order to avoid issues running the tests
 
-__Note__: more likely you will need to change the path of this file to match with a directory of your computer where you copied the web API
+  __Note__: more likely you will need to change the path of this file to match with a directory of your computer where you copied the  web API
 
 5) The configuration file __testappconfig.json__ in the test project, is used to set the path of the previous xml file
 6) Compile the solution and press F5 to run the API
