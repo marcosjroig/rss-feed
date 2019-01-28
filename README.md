@@ -19,7 +19,6 @@ After downloading this repo and unzip it, please follow the next instructions to
 ### Web Api
 1) Open the solution of the folder __"RssFeedApi"__ with VS2017 or newer 
 2) File __appsettings.json__: you don't need to change this, but if you do please ensure you do it consistently.
-   
    - RssFeed: has the URL of the RSS Feed
    - WebSolution: has the URL of the angular web page. This page will be running by default on http://localhost:4200 , if you change this you will need to change the base URL of the angular project as well.
 3) Ensure the file __launchSettings.json__ is pointing to this URL http://localhost:5000/ as the Web project is looking at this URL to access to the DB.
