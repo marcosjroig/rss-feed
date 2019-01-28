@@ -21,12 +21,13 @@ After downloading this repo and unzip it, please follow the next instructions to
 2) File __appsettings.json__: you don't need to change this, but if you do please ensure you do it consistently.
    - __RssFeed__: has the URL of the RSS Feed
    - __WebSolution__: has the URL of the angular web page. This page will be running by default on http://localhost:4200 , if you change this you will need to change the base URL of the angular project as well.
-3) Ensure the file __launchSettings.json__ is pointing to this URL http://localhost:5000/ as the Web project is looking at this URL to access to the DB.
-4) Compile the solution and press F5 to run the API
-5) Do not worry if you see an empty page when you run the API
+3) Ensure the file __launchSettings.json__ is pointing to this URL http://localhost:10140 as the Web project is looking at this URL to access the Web API
+4) There is a file __FakeXmlFeed.xml__ in the root of the __RssFeedApi__ folder with a few news that is used for testing in the testing project. Be sure to keep this file in order to avoid issues running the tests
+5) The configuration file __testappconfig.json__ in the test project, is used to set the path of the previous xml file
+6) Compile the solution and press F5 to run the API
 
 ### Web solution installation
-1) Go to the command line and navigate until the __"Web"__ folder, in the root of this folder execute these commands:
+1) Go to the command line and navigate until the __"Web\rss-feed-app"__ folder, in the root of this folder execute these commands:
 
   #### npm install 
   > To install the Node packages
@@ -34,9 +35,7 @@ After downloading this repo and unzip it, please follow the next instructions to
   #### ng serve
   > To run the web server
 
-
-
 ## Execution
 Once you have configured everything like in the previous steps, you should have running:
 - the web solution in the URL http://localhost:4200/ 
-- the Web API in the URL http://localhost:5000/
+- the Web API in the URL http://localhost:10140
