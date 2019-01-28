@@ -34,8 +34,11 @@ After downloading this repo and unzip it, please follow the next instructions to
   
   #### ng serve
   > To run the web server
+  
+2) The service __feed.service.ts__ located in this path __Web\rss-feed-app\src\app\feeds__ has a variable that points to the API (API_URL), if you change the API base URL be sure to change also this
 
 ## Execution
 Once you have configured everything like in the previous steps, you should have running:
 - the web solution in the URL http://localhost:4200/ 
-- the Web API in the URL http://localhost:10140
+- the Web API in the URL http://localhost:10140 , you should see some JSON data in the browser when you launch it
+- click on the link "Load feeds" to see the news articles coming from the API, or go to the URL: http://localhost:4200/feeds/ 
